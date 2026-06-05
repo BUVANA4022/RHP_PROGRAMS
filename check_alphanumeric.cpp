@@ -1,3 +1,4 @@
+// Online C++ compiler to run C++ program online
 #include <iostream>
 using namespace std;
 int main() {
@@ -8,9 +9,9 @@ int main() {
         flag1 = flag1 | (1<<(a[i]-'a'));
         flag2 = flag2 | (1<<(a[i]-'A'));
         if(a[i]>='0' && a[i]<='9')
-       flag3 = flag3 | (1<<(a[i]-'0'));
+        flag3 = flag3 | (1<<(a[i]-'0'));
     }
-    cout<<(((flag2 == (1<<26)-1)  && (flag2 == (1<<26)-1) &&(flag3 ==(1<<10)-1))?"yes":"no");
+    cout<<(((flag1 == (1<<26)-1) && (flag2 == (1<<26)-1) && (flag3 == (1<<10)-1))?"yes":"no");
 
 
 
