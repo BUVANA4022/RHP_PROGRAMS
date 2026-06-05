@@ -10,6 +10,6 @@ int main() {
         if(a[i]>='A' && a[i]<='Z')
         flag2 = flag2 | (1<<(a[i]-'A'));
     }
-    cout<<(((flag2 == (1<<26)-1)  && (flag2 == (1<<26)-1) )?"yes":"no");
+    cout<<(((flag1 == (1<<26)-1)  && (flag2 == (1<<26)-1) )?"yes":"no");
     return 0;
 }
