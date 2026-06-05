@@ -6,7 +6,9 @@ int main() {
     cin>>a;
     int flag1=0,flag2=0,flag3=0;
     for(int i=0;i<a.length();i++){
+        if(a[i]>='a' && a[i]<='z')
         flag1 = flag1 | (1<<(a[i]-'a'));
+        if(a[i]>='A' && a[i]<='Z')
         flag2 = flag2 | (1<<(a[i]-'A'));
         if(a[i]>='0' && a[i]<='9')
         flag3 = flag3 | (1<<(a[i]-'0'));
