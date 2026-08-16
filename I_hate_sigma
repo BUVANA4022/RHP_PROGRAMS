@@ -1,0 +1,18 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main(){
+   int n;
+   cin>>n;
+   int a[n+1];
+   for(int i=n;i>0;i--)
+   cin>>a[i];
+   long long sum=0,l=0;
+   int p[n+1]={0};
+   for(int i=1;i<=n;i++){
+       l = l - p[a[i]] +i;
+       p[a[i]]=i;
+       sum+=l;
+   }
+   cout<<sum;
+}
