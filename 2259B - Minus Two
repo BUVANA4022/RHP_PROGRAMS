@@ -1,0 +1,27 @@
+#include <iostream>
+#include<vector>
+using namespace std;
+int main() {
+    int u;
+    cin>>u;
+    for(int i=0;i<u;i++){
+        int n;
+        cin>>n;
+        int a=0,b=0,c=0;
+        for(int j=0;j<n;j++){
+           int t;
+            cin>>t;
+            if(t%2==1)
+                a++;
+            else{
+                if(t/2%2 == 0)
+                    b++;
+                else
+                    c++;
+            }
+        }
+            cout<<max(a,max(b,c))<<endl;
+        
+        
+    }
+}
